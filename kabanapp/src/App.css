@@ -60,7 +60,7 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   justify-content: space-between;
-  padding: 8px;
+  padding: 12px;
   flex-direction: column;
 }
 
@@ -127,7 +127,7 @@
 /* CAJA TAREAS */
 
 .tasks-box {
-  width: 100%;
+  width: auto;
   position: relative;
   height: auto;
   padding: 6px 6px;
