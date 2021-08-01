@@ -1,39 +1,60 @@
-
 import './App.css';
+
 function App() {
   return (
+   
     <div className="mainContainer">
-      <div className="headerContainer">
-        <img src=" https://www.neoland.es/hubfs/favicon%20neoland-02-02-02.png" alt="LogoNeoland" />
+    <div className="headerContainer">
+      <img className ="headerLogo" src=" https://www.neoland.es/hubfs/favicon%20neoland-02-02-02.png" alt="LogoNeoland" />
+      <p className="headerText">Version 1.0</p>
+    </div>
+    <div className="searchContainer">
+      <div className="info">
+      <p><b>Version 1.0</b></p>
+      <p>Updated on 12 abr</p>
+    </div>
+    <div  className="filter">
+      <input type="text" placeholder="Filter cards"></input>
+    </div>
+    </div>
+    <div className="ContainerTemplate">
+      <div className="card_template cardTemplate1">
+        <div className="container-todo">
+        <h1 className="title-column"><span className="circle_count">1</span>To do</h1>
 
-        <p>Version 1.0</p>
+        <button className="button_add_task">+</button>
+        </div>
+     {/* Este div seria la cajita para escribir las notas que vamos a agregar */}
+        <div className="box-add-card">
+          <textarea className="input_box" type="text" placeholder="Enter a note"></textarea>
+          <div className="container-button-note">
+          <button className="button-add-note">Add</button>
+          <button className="button-cancel-note">Cancel</button>
+          </div>
+          </div>
+        </div>
+     
+     
+      <div className="card_template cardTemplate2">
+      <div className="container-progress">
+        <h1 className="title-column"><span className="circle_count">1</span>In Progress</h1>
+        <button className="button_add_task">+</button>
+      </div>
+      </div>
+      <div className="card_template cardTemplate3">
+      <div className="container-done">
+        <h1 className="title-column"><span className="circle_count">1</span>Done</h1>
+        <div className="container_button_done">
+        <button className="button_add_task">+</button>
+        <button>Clear All</button>
+        </div>
+        </div>
+      
+      
 
-      </div>
-      <div className="searchContainer">
-        <p> Version 1.0</p>
-        <p>Updated on 12 abr</p>
-        <input type="text" placeholder="Filter cards"></input>
-      </div>
-      <div className="ContainerTemplate">
-        <div className="cardTemplate1">
-          <button>1</button>
-          <p>To do</p>
-          <button>+</button>
-        </div>
-        <div className="cardTemplate2">
-          <button>1</button>
-          <p>In Progress</p>
-          <button>+</button>
-        </div>
-        <div className="cardTemplate3">
-          <button>1</button>
-          <p>Done</p>
-          <button>+</button>
-          <button>Clear All</button>
-        </div>
       </div>
     </div>
-
+  </div>
 
   );
 }

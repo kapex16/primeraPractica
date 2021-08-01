@@ -1,4 +1,125 @@
-.headerContainer{
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, AppleColorEmoji,
+    Segoe UI Emoji;
+}
+.headerLogo {
+  height: 30px;
+  width: 30px;
+  margin: 7px 0px 15px 20px;
+}
+.headerContainer {
+  height: 50px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  background-color: #24292e;
+}
+.headerText {
+  margin: 0px auto;
+  font-weight: bold;
+  color: white;
+}
+.searchContainer {
+  display: grid;
+  align-content: start;
+  align-items: center;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  width: 100%;
+  margin: 20px 10px;
+}
+.info {
+  line-height: 1.6rem;
+}
+.filter {
+  text-align: right;
+  grid-column: 2;
+  margin-right: 30px;
+}
 
+/* COLUMNAS */
 
+.ContainerTemplate {
+  display: flex;
+  flex-direction: row;
+}
+
+.card_template {
+  width: 33.33%;
+  display: flex;
+  background-color: #f6f8fa;
+  margin: 0.5rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  justify-content: space-between;
+  padding: 8px;
+  flex-direction: column;
+}
+
+/* .title-column{
+  margin-bottom:15px;
+} */
+
+.container-todo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-progress {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-done {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* cuantas tareas tienes en cada columna */
+.circle_count {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 3px;
+  background-color: rgba(128, 128, 128, 0.322);
+  width: 15px;
+}
+
+/* box to add notes in the to do */
+
+.box-add-card {
+  margin: 20px 0 auto;
+  width: 90%;
+}
+
+.input_box {
+  width: 100%;
+  height: 80px;
+}
+
+.container-button-note {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.button-add-note {
+  width: 50%;
+  margin: 5px;
+}
+
+.button-cancel-note {
+  width: 50%;
+  margin: 5px;
 }
