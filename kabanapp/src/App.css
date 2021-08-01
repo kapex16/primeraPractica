@@ -123,3 +123,46 @@
   width: 50%;
   margin: 5px;
 }
+
+/* CAJA TAREAS */
+
+.tasks-box {
+  width: 100%;
+  position: relative;
+  height: auto;
+  padding: 6px 6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+  border: 1px solid rgb(114, 114, 114);
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #888888;
+}
+
+.icon {
+  position: absolute;
+}
+.to-do-icon {
+  top: 0;
+  left: 0;
+  color: #22863a;
+}
+.finished-icon {
+  top: 0;
+  left: 0;
+  color: #cb2431;
+}
+.trashcan {
+  top: 0;
+  right: 0;
+}
+.tasks-box p {
+  margin: 3px 25px;
+}
+.task-title {
+  color: #0366d6;
+  font-weight: bold;
+}
+.task-info {
+  color: black;
+}
