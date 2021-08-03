@@ -62,6 +62,8 @@
   justify-content: space-between;
   padding: 12px;
   flex-direction: column;
+  overflow: scroll;
+  height: 70vh;
 }
 
 /* .title-column{
@@ -153,10 +155,14 @@
   color: #cb2431;
 }
 .trashcan {
+  width: 1.5rem;
+  float: right;
+  color: #8f8f8f;
   top: 0;
   right: 0;
 }
 .tasks-box p {
+  text-align: center;
   margin: 3px 25px;
 }
 .task-title {
