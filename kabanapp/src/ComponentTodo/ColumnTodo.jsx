@@ -1,4 +1,4 @@
-
+import './ColumnTodo.css';
 
 function TodoComponent(){
 

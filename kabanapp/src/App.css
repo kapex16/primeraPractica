@@ -7,83 +7,12 @@
     BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, AppleColorEmoji,
     Segoe UI Emoji;
 }
-.headerLogo {
-  height: 30px;
-  width: 30px;
-  margin: 7px 0px 15px 20px;
-}
-.headerContainer {
-  height: 50px;
-  align-items: center;
-  display: flex;
-  width: 100%;
-  background-color: #24292e;
-}
-.headerText {
-  margin: 0px auto;
-  font-weight: bold;
-  color: white;
-}
-.searchContainer {
-  display: grid;
-  align-content: start;
-  align-items: center;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-  width: 100%;
-  margin: 20px 10px;
-}
-.info {
-  line-height: 1.6rem;
-}
-.filter {
-  text-align: right;
-  grid-column: 2;
-  margin-right: 30px;
-}
+
 
 /* COLUMNAS */
 
-.ContainerTemplate {
-  display: flex;
-  flex-direction: row;
-}
 
-.card_template {
-  width: 33.33%;
-  display: flex;
-  background-color: #f6f8fa;
-  margin: 0.5rem;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  justify-content: space-between;
-  padding: 12px;
-  flex-direction: column;
-  overflow: scroll;
-  height: 70vh;
-}
 
-/* .title-column{
-  margin-bottom:15px;
-} */
-
-.container-todo {
-  display: flex;
-  justify-content: space-between;
-}
-
-.container-progress {
-  display: flex;
-  justify-content: space-between;
-}
-
-.container-done {
-  display: flex;
-  justify-content: space-between;
-}
 
 /* cuantas tareas tienes en cada columna */
 .circle_count {
@@ -99,76 +28,8 @@
 
 /* box to add notes in the to do */
 
-.box-add-card {
-  margin: 20px 0 auto;
-  width: 90%;
-}
 
-.input_box {
-  width: 100%;
-  height: 80px;
-}
-
-.container-button-note {
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.button-add-note {
-  width: 50%;
-  margin: 5px;
-}
-
-.button-cancel-note {
-  width: 50%;
-  margin: 5px;
-}
 
 /* CAJA TAREAS */
 
-.tasks-box {
-  width: auto;
-  position: relative;
-  height: auto;
-  padding: 6px 6px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background-color: white;
-  border: 1px solid rgb(114, 114, 114);
-  border-radius: 5px;
-  box-shadow: 1px 1px 3px #888888;
-}
 
-.icon {
-  position: absolute;
-}
-.to-do-icon {
-  top: 0;
-  left: 0;
-  color: #22863a;
-}
-.finished-icon {
-  top: 0;
-  left: 0;
-  color: #cb2431;
-}
-.trashcan {
-  width: 1.5rem;
-  float: right;
-  color: #8f8f8f;
-  top: 0;
-  right: 0;
-}
-.tasks-box p {
-  text-align: center;
-  margin: 3px 25px;
-}
-.task-title {
-  color: #0366d6;
-  font-weight: bold;
-}
-.task-info {
-  color: black;
-}

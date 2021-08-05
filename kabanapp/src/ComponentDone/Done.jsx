@@ -1,6 +1,6 @@
+import './Done.css';
 
-
-function TemlateDone(){
+function TemplateDone(){
 
  return(
     <div className="card_template cardTemplate3">
@@ -14,8 +14,8 @@ function TemlateDone(){
     </div>
 
 
-        )
+ )
 
 }
 
-export default TemlateDone;
+export default TemplateDone;

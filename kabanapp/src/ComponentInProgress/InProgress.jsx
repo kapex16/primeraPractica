@@ -1,4 +1,4 @@
-
+import './InProgress.css'
 
 function TemplateInPorgress(){
     return(
