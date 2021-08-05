@@ -12,3 +12,5 @@ export function Items() {
   </div>
 </div>
   )}
+
+  export default Items;
