@@ -1,6 +1,7 @@
 import "./ColumnTodo.css";
 import Items from "../Input/items";
-import TemplateCard from "../Card/card";
+import Card from "../Card/card";
+import AddIcon from '@material-ui/icons/Add';
 
 function Column(props) {
   return (
@@ -10,11 +11,11 @@ function Column(props) {
           <span className="circle_count">{props.numberOfItems}</span>
           {props.name}
         </h1>
-        <button className="button_add_task">+</button>
+        <AddIcon className='icon_Add'></AddIcon>
       </div>
 
       <Items></Items>
-      <TemplateCard></TemplateCard>
+      <Card title="Card de ejemplo" status="done" id="1" date="05/08/2021 23:30"></Card>
     </div>
   );
 }

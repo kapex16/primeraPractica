@@ -1,0 +1,72 @@
+.box-add-card {
+  margin: 20px 0 auto;
+  width: 100%;
+}
+
+.input_box {
+  width: 100%;
+  height: 80px;
+  border-radius: 12px;
+}
+
+.input_box:focus { 
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.container-button-note {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.button_input {
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 48%;
+  font-size: 14px;
+  line-height: 1.42857143;
+  font-weight: 400;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.button_add_note:active {
+  background-color: #2ea44f;
+  transform: translateY(1px);
+  -webkit-transform: translateY(1px);
+  -moz-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  -o-transform: translateY(1px);
+}
+
+.button_add_note {
+  background-color: #2ea44f;
+  color: white;
+}
+
+.button_cancel_note:active {
+  background-color: #fafbfc;
+  transform: translateY(1px);
+  -webkit-transform: translateY(1px);
+  -moz-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  -o-transform: translateY(1px);
+}
+
+.button_cancel_note {
+  border: 0.1rem solid #cfcece;
+  background-color: #fafbfc;
+  color: black;
+}
