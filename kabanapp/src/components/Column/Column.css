@@ -1,0 +1,42 @@
+.card_template {
+  width: 33.33%;
+  background-color: #f6f8fa;
+  margin: 0.5rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  justify-content: space-between;
+  padding: 12px;
+  flex-direction: column;
+  /* height: 100%; */
+}
+
+.container-todo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle_count {
+  background-color: #e5e5e5;
+  width: 26px;
+  height: 28px;
+  border: 0.5px solid #e5e5e5;
+  border-radius: 11.5px;
+  padding-bottom: 5.2px;
+  padding-left: 7px;
+}
+
+.icon_Add {
+  cursor: pointer;
+}
+
+.button-clear-all {
+  border: none;
+}
+
+.container_cards{
+  overflow: auto;
+  height: 70vh;
+}

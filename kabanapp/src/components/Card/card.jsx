@@ -23,7 +23,7 @@ function Card(props){
           #{props.id} created on {props.date}
         </p>
       </div>
-        <Delete>{props.status}</Delete>
+      <Delete>{props.status}</Delete>
     </div>
     );
 }

@@ -16,7 +16,7 @@ function TemplateHeader(){
             <p>Updated on 12 abr</p>
           </div>
           <div className="filter">
-            <input type="text" placeholder="Filter cards"></input>
+            <input type="text" placeholder="🔎 Filter cards"/>
           </div>
         </div>
   
