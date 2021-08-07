@@ -1,11 +1,12 @@
 .container-task{
-  /* background-color:#f6f8fa; */
-  width: 91%;
-  height: 8%;
+  background-color:#fafbfc;
+  width: 92%;
+  margin-top: 7px;
+  min-height: 5%;
   display:flex;
   padding: 10px;
   border-radius: 15px;
-  border: 0.1rem solid #cfcece;
+  border: 0.1rem solid rgba(27,31,35,0.15);
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
