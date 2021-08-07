@@ -2,7 +2,6 @@
 
 .card_template {
     width: 33.33%;
-    display: flex;
     background-color: #f6f8fa;
     margin: 0.5rem;
     border-radius: 20px;
@@ -14,7 +13,7 @@
     padding: 12px;
     flex-direction: column;
     overflow: scroll;
-    height: 70vh;
+    height: 100vh;
   }
 
 .container-todo {
@@ -31,4 +30,8 @@
     padding: 3px;
     background-color: rgba(128, 128, 128, 0.322);
     width: 15px;
+  }
+
+  .icon_Add{
+    cursor: pointer;
   }

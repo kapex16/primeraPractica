@@ -1,26 +1,33 @@
-import './CardComponent.css'
-import { Delete,RadioButtonChecked,CheckCircle } from '@material-ui/icons';
+import React from "react";
+import {
+  Delete,
+  CheckCircleOutline,
+  RadioButtonChecked,
+} from "@material-ui/icons";
+import "./style.css";
 
-function TemplateCard(props){
+
+function Card(props){
 
     return(
 
-      <div className="tasks-box">
+      <div className="container-task">
       {props.status === "done" ? (
-        <CheckCircle className="icon finished-icon"></CheckCircle>
+        <CheckCircleOutline className='icon-red'>{props.status}</CheckCircleOutline>
       ) : (
-        <RadioButtonChecked className="icon to-do-icon"></RadioButtonChecked>
+        <RadioButtonChecked className='icon-green'>{props.status}</RadioButtonChecked>
       )}
-      <div>
-        <h4 className="task-title">{props.title}</h4>
-        <p className="task-info">
-          # {props.id} created on {props.date}{" "}
+      <div className="text-task">
+        <h3 className="title-color">{props.title}</h3>
+        <p>
+          #{props.id} created on {props.date}
         </p>
       </div>
-      <div>
-        <Delete class="trashcan"></Delete>
-      </div>
+        <Delete>{props.status}</Delete>
     </div>
-    )
+    );
 }
-export default TemplateCard;
+export default Card;
+
+
+
