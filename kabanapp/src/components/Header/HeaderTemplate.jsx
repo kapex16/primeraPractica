@@ -20,7 +20,7 @@ function TemplateHeader(props) {
           <p>{props.updatedLast}</p>
         </div>
         <div className="filter">
-          <input type="text" placeholder="Filter cards"></input>
+          <input type="text" placeholder="🔎 Filter cards" />
         </div>
       </div>
     </div>
