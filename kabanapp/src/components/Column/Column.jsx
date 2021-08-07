@@ -1,9 +1,10 @@
-import '../Column/Column.css';
-import Items from "../Input/items";
+import "../Column/Column.css";
 import Card from "../Card/card";
-import AddIcon from '@material-ui/icons/Add';
+import AddIcon from "@material-ui/icons/Add";
+import React, { useState } from "react";
 
 function Column(props) {
+  const [show, setShow] = useState(true);
   return (
     <div className="card_template">
       <div className="container-todo">
@@ -12,21 +13,82 @@ function Column(props) {
           {props.name}
         </h1>
         <div>
-        <AddIcon className='icon_Add'></AddIcon>
-        {props.clearall ? <button className="button-clear-all">clear all</button> : ''}
+          <button className="icon_Add" onClick={() => setShow((s) => !s)}>
+            <AddIcon></AddIcon>
+          </button>
+          {props.clearall ? (
+            <button className="button-clear-all">clear all</button>
+          ) : (
+            ""
+          )}
+        </div>
+      </div>
+      <div className="box_add_card" style={{ display: show ? "block" : "none" }}>
+        <textarea
+          className="input_box"
+          type="text"
+          placeholder="Enter a note"
+        ></textarea>
+        <div className="container_button_note">
+          <button className="button_input button_add_note">Add</button>
+          <button className="button_input button_cancel_note">Cancel</button>
         </div>
       </div>
       <div className="container_cards">
-      <Items></Items>
-      <Card title="Creación del CI/CD para el frontal" status={props.status} id="23" date="20/05/20"></Card>
-      <Card title="Creación del CI/CD para el frontal" status={props.status} id="23" date="20/05/20"></Card>
-      <Card title="Creación del CI/CD para el frontal" status={props.status} id="23" date="20/05/20"></Card>
-      <Card title="Creación del CI/CD para el frontal" status={props.status} id="23" date="20/05/20"></Card>
-      <Card title="Creación del CI/CD para el frontal" status={props.status} id="23" date="20/05/20"></Card>
-      <Card title="Creación del CI/CD para el frontal" status={props.status} id="23" date="20/05/20"></Card>
-      <Card title="Creación del CI/CD para el frontal" status={props.status} id="23" date="20/05/20"></Card>
-      <Card title="Creación del CI/CD para el frontal" status={props.status} id="23" date="20/05/20"></Card>
-      <Card title="Creación del CI/CD para el frontal" status={props.status} id="23" date="20/05/20"></Card>
+        <Card
+          title="Creación del CI/CD para el frontal"
+          status={props.status}
+          id="23"
+          date="20/05/20"
+        ></Card>
+        <Card
+          title="Creación del CI/CD para el frontal"
+          status={props.status}
+          id="23"
+          date="20/05/20"
+        ></Card>
+        <Card
+          title="Creación del CI/CD para el frontal"
+          status={props.status}
+          id="23"
+          date="20/05/20"
+        ></Card>
+        <Card
+          title="Creación del CI/CD para el frontal"
+          status={props.status}
+          id="23"
+          date="20/05/20"
+        ></Card>
+        <Card
+          title="Creación del CI/CD para el frontal"
+          status={props.status}
+          id="23"
+          date="20/05/20"
+        ></Card>
+        <Card
+          title="Creación del CI/CD para el frontal"
+          status={props.status}
+          id="23"
+          date="20/05/20"
+        ></Card>
+        <Card
+          title="Creación del CI/CD para el frontal"
+          status={props.status}
+          id="23"
+          date="20/05/20"
+        ></Card>
+        <Card
+          title="Creación del CI/CD para el frontal"
+          status={props.status}
+          id="23"
+          date="20/05/20"
+        ></Card>
+        <Card
+          title="Creación del CI/CD para el frontal"
+          status={props.status}
+          id="23"
+          date="20/05/20"
+        ></Card>
       </div>
     </div>
   );
