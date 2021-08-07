@@ -42,6 +42,7 @@
 
 .button_add_note{
   background-color: #2ea44f;
+  color:white;
 }
 
 .button_add_note:active {
