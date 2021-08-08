@@ -12,12 +12,12 @@ function Column(props) {
           <span className="circle_count">{props.numberOfItems}</span>
           {props.name}
         </h1>
-        <div>
+        <div className="containerIcon_third_column">
           <button className="icon_Add" onClick={() => setShow((s) => !s)}>
             <AddIcon></AddIcon>
           </button>
           {props.clearall ? (
-            <button className="button-clear-all">clear all</button>
+            <button className="button-clear-all">Clear All</button>
           ) : (
             ""
           )}
