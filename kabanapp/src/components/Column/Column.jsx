@@ -2,17 +2,26 @@ import "../Column/Column.css";
 import Card from "../Card/card";
 import AddIcon from "@material-ui/icons/Add";
 import React, { useState } from "react";
+import ClearAllButton from "../functions/delete-all";
+import AddNewCard from "../functions/add-card";
+import RetrieveLocalStorage from "../functions/retrieve";
 // import setCards from "../../App";
+
 function Column(props) {
   const [show, setShow] = useState(true);
-  const cards = props.arr.map((item, index) => {
-    return props.name === item.status ? (
+
+  const [entradas, setEntradas] = useState("");
+
+  let allCards = RetrieveLocalStorage("MyStoredCards");
+
+  const cards = allCards.map((card, index) => {
+    return props.name === card[0].status ? (
       <Card
-        title={item.title}
-        status={item.status}
+        title={card[0].title}
+        status={card[0].status}
         key={index}
         id={index}
-        date={item.date}
+        date={card[0].date}
       ></Card>
     ) : (
       ""
@@ -30,7 +39,12 @@ function Column(props) {
             <AddIcon></AddIcon>
           </button>
           {props.clearall ? (
-            <button className="button-clear-all">clear all</button>
+            <button
+              onClick={() => ClearAllButton(allCards, props.name)}
+              className="button-clear-all"
+            >
+              clear all
+            </button>
           ) : (
             ""
           )}
@@ -44,10 +58,16 @@ function Column(props) {
           className="input_box"
           type="text"
           placeholder="Enter a note"
-          // onSubmit={(e) => setEntradas(e, this.value)}
+          onBlur={(e) => setEntradas(e.target.value)}
         ></textarea>
         <div className="container_button_note">
-          <button className="button_input button_add_note">Add</button>
+          {/* <AddNewCard cards={Entradas}></AddNewCard> */}
+          <button
+            onClick={() => AddNewCard(entradas, props.name)}
+            className="button_input button_add_note"
+          >
+            Add
+          </button>
           <button className="button_input button_cancel_note">Cancel</button>
         </div>
       </div>

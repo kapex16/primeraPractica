@@ -4,6 +4,7 @@ import {
   CheckCircleOutline,
   RadioButtonChecked,
 } from "@material-ui/icons";
+import EraseCard from "../functions/delete-card";
 import "./style.css";
 
 function Card(props) {
@@ -24,7 +25,7 @@ function Card(props) {
           #{props.id + 1} created on {props.date}
         </p>
       </div>
-      <Delete></Delete>
+      <Delete onClick={(e) => EraseCard(props.id)}></Delete>
     </div>
   );
 }
