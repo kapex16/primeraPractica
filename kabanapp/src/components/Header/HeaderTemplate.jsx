@@ -3,7 +3,7 @@ import './HeaderTemplate.css';
 
 function TemplateHeader(){
   const currentDay = new Date();
-  const monthNumber = (new Date().getMonth()+1);
+  const monthNumber = (new Date().getMonth());
   let monthNames = ["Jan", "Feb", "March", "Apr", "May", "June", "July", "Aug", "Sept", "October", "Nov", "Dec"];
   let monthName = monthNames[monthNumber];
     return(
