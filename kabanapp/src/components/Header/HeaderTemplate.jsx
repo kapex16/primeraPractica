@@ -1,5 +1,5 @@
 import './HeaderTemplate.css';
-
+import aling from '../../asset/align-left_ok.png'
 
 function TemplateHeader(){
   const currentDay = new Date();
@@ -10,7 +10,7 @@ function TemplateHeader(){
         <div className="mainContainer">
         <div className="headerContainer">
           <img className="headerLogo" src=" https://www.neoland.es/hubfs/favicon%20neoland-02-02-02.png" alt="LogoNeoland" />
-          <p className="headerText">Version 1.0</p>
+          <p className="headerText"><img  className="logo_Version" alt="icm" src={aling}></img>Version 1.0</p>
         </div>
         
         <div className="searchContainer">
