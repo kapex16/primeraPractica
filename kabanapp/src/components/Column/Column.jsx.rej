@@ -1,0 +1,12 @@
+diff a/kabanapp/src/components/Column/Column.jsx b/kabanapp/src/components/Column/Column.jsx	(rejected hunks)
+@@ -1,7 +0,8 @@
+-import '../Column/Column.css';
++import "../Column/Column.css";
+ import Items from "../Input/items";
++import ClearAllButton from "../../functions/delete-all";
+ import Card from "../Card/card";
+-import AddIcon from '@material-ui/icons/Add';
++import AddIcon from "@material-ui/icons/Add";
+ 
+ function Column(props) {
+   return (

@@ -21,11 +21,11 @@ function TemplateHeader(){
           <div className="filter">
             <input className="Iput-src" type="text" placeholder="Filter cards"/>
           </div>
+
         </div>
-  
-  
       </div>
-    )
+    </div>
+  );
 }
- 
-    export default TemplateHeader;
+
+export default TemplateHeader;
