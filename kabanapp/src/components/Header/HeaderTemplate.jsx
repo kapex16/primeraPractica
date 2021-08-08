@@ -19,7 +19,7 @@ function TemplateHeader(){
             <p>Updated on {currentDay.getDate()} {monthName}</p>
           </div>
           <div className="filter">
-            <input type="text" placeholder="🔎 Filter cards"/>
+            <input className="Iput-src" type="text" placeholder="Filter cards"/>
           </div>
         </div>
   
