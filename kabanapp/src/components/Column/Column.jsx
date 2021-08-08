@@ -34,11 +34,12 @@ function Column(props) {
           <span className="circle_count">{props.numberOfItems}</span>
           {props.name}
         </h1>
-        <div>
+        <div className="containerIcon_third_column">
           <button className="icon_Add" onClick={() => setShow((s) => !s)}>
             <AddIcon></AddIcon>
           </button>
           {props.clearall ? (
+
             <button
               onClick={() => ClearAllButton(allCards, props.name)}
               className="button-clear-all"
