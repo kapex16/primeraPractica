@@ -8,6 +8,9 @@ import RetrieveLocalStorage from "../functions/retrieve";
 // import setCards from "../../App";
 
 function Column(props) {
+  
+  const [contador, setContador] = useState(0);
+
   const [show, setShow] = useState(true);
 
   const [entradas, setEntradas] = useState("");
@@ -27,11 +30,13 @@ function Column(props) {
       ""
     );
   });
+
+
   return (
     <div className="card_template">
       <div className="container-todo">
         <h1 className="title-column">
-          <span className="circle_count">{props.numberOfItems}</span>
+          <span className="circle_count">{contador}</span>
           {props.name}
         </h1>
         <div className="containerIcon_third_column">
@@ -64,7 +69,7 @@ function Column(props) {
         <div className="container_button_note">
           {/* <AddNewCard cards={Entradas}></AddNewCard> */}
           <button
-            onClick={() => AddNewCard(entradas, props.name)}
+            onClick={() => {AddNewCard(entradas, props.name);setContador(contador +1)}}
             className="button_input button_add_note"
           >
             Add
