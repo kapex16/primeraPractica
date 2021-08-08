@@ -30,4 +30,18 @@
   text-align: right;
   grid-column: 2;
   margin-right: 30px;
+  
+ 
 }
+input.Iput-src{
+ padding: 5px 10px 5px 35px;
+ outline: none;
+ font-size: 1rem;
+ border-radius: 5px;
+ border-color: rgb(184, 183, 183);
+ color: rgb(10, 10, 10);
+ background: rgb(245, 245, 245)  url("../../asset/search-icon.png") no-repeat 9px  center;
+ width: 350px;
+ transition: all 9s;
+}
+
