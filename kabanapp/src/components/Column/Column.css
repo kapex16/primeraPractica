@@ -18,6 +18,10 @@
   justify-content: space-between;
 }
 
+.title-column{
+  color: #24292e;
+}
+
 .circle_count {
   background-color: #e5e5e5;
   width: 26px;
@@ -31,15 +35,28 @@
 .icon_Add {
   cursor: pointer;
   border: none;
+  background-color: #f6f8fa;
+  font-size: 20px;
+  margin-right: 7px;
+  color:#24292e;
 }
 
 .button-clear-all {
+  color: #cfcece;
+  cursor: pointer;
   border: none;
+  background-color: #f6f8fa;
+  text-decoration: underline;
+  padding-bottom: 6px;
 }
 
 .container_cards{
   overflow: auto;
   height: 70vh;
+}
+
+.containerIcon_third_column{
+  display: flex;
 }
 
 /* //CSS DEL INPUT */
@@ -49,6 +66,7 @@
 }
 
 .input_box {
+  margin-top: 5px;
   width: 97%;
   height: 65px;
   border-radius: 12px;
