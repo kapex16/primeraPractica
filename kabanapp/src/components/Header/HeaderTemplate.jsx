@@ -24,7 +24,7 @@ function TemplateHeader(){
 
         </div>
       </div>
-    </div>
+  
   );
 }
 
